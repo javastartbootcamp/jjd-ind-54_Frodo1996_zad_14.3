@@ -13,7 +13,7 @@ public class Main {
         FileUtils fileUtils = new FileUtils();
         Map<String, TreeSet<Country>> countries;
         try {
-            countries = fileUtils.readFile("countries.csv");
+            countries = fileUtils.readFile();
             if (countries.size() == 0) {
                 System.out.println("Brak pliku countries.csv.");
                 scanner.close();
